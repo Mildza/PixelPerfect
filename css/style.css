@@ -43,12 +43,44 @@ article {
   background-color: #FFF;
   padding: 20px 15px;
   border: 2px solid #CDCDCD; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    article {
+      padding: 10px 15px; } }
+  @media (min-width: 996px) {
+    article {
+      padding: 10px 15px; } }
 
 .product-image {
-  text-align: center; }
+  margin: auto;
+  width: 200px; }
+  .product-image > img {
+    width: 100%; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-image {
+      display: inline-block;
+      width: 20%;
+      vertical-align: top; } }
+  @media (min-width: 996px) {
+    .product-image {
+      display: inline-block;
+      width: 21%;
+      vertical-align: top; } }
 
 .product-description {
   text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-description {
+      display: inline-block;
+      width: 78%;
+      text-align: left;
+      margin-left: 1%; } }
+  @media (min-width: 996px) {
+    .product-description {
+      display: inline-block;
+      width: 43%;
+      text-align: left;
+      max-width: 415px;
+      margin-left: 1%; } }
   .product-description_title {
     line-height: 122%;
     font-size: 19px;
@@ -63,11 +95,29 @@ article {
 
 .product-order {
   text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-order {
+      margin-left: 21.5%;
+      width: 78%;
+      text-align: left; } }
+  @media (min-width: 996px) {
+    .product-order {
+      display: inline-block;
+      width: 34%;
+      text-align: right;
+      vertical-align: top; } }
   .product-order_price {
     margin-top: 15px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .product-order_price {
+        display: inline-block;
+        width: 32%; } }
+    @media (min-width: 996px) {
+      .product-order_price {
+        margin-top: 6px;
+        margin-bottom: 78px; } }
     .product-order_price .regular_price {
-      font-size: 19px;
-      font-weight: 900; }
+      font-size: 19px; }
       .product-order_price .regular_price > .rp-rl {
         display: inline-block;
         background: url(./line.png);
@@ -77,11 +127,27 @@ article {
       font-weight: 900;
       color: #DC5730; }
   .product-order_qty {
-    font-size: 20px;
+    font-size: 21px;
     margin: 10px 0; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .product-order_qty {
+        display: inline-block;
+        width: 135px; } }
+    @media (min-width: 996px) {
+      .product-order_qty {
+        display: inline-block; } }
     .product-order_qty > input {
       width: 80px;
-      border-radius: 12px; }
+      border-radius: 12px;
+      margin-left: 10px; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-order_btn {
+      display: inline-block;
+      width: 170px; } }
+  @media (min-width: 996px) {
+    .product-order_btn {
+      display: inline-block;
+      margin-left: 10px; } }
   .product-order_btn > button {
     font-size: 22px;
     color: #FFF;

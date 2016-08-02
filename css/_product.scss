@@ -4,14 +4,6 @@ h2 {
   font-size: 34px;
   font-weight: 900;
   color: #0B6796;
-
-  @include tablet {
-
-  }
-
-  @include desktop {
-
-  }
 }
 
 section{
@@ -24,14 +16,55 @@ article{
   background-color:#FFF;
   padding: 20px 15px;
   border: 2px solid #CDCDCD;
+
+  @include tablet {
+  padding: 10px 15px;
+  }
+
+  @include desktop {
+  padding: 10px 15px;
+  }
+
 }
 
 .product-image{
-  text-align: center;
+  margin:auto;;
+  width: 200px;
+  > img {
+    width:100%;
+  }
+
+  @include tablet {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
+
+  @include desktop {
+    display: inline-block;
+    width: 21%;
+    vertical-align: top;
+  }
 }
 
 .product-description{
   text-align: center;
+
+  @include tablet {
+    display: inline-block;
+    width:78%;
+    text-align: left;
+    margin-left: 1%;
+  }
+
+  @include desktop {
+    display: inline-block;
+    width:43%;
+    text-align: left;
+    max-width: 415px;
+    margin-left: 1%;
+  }
+
   &_title{
     line-height: 122%;
     font-size: 19px;
@@ -50,11 +83,33 @@ article{
 
 .product-order{
   text-align: center;
+
+  @include tablet {
+    margin-left: 21.5%;
+    width:78%;
+    text-align: left;
+  }
+
+  @include desktop {
+    display: inline-block;
+    width:34%;
+    text-align: right;;
+    vertical-align: top;
+  }
   &_price{
     margin-top: 15px;
+
+    @include tablet {
+      display: inline-block;
+      width:32%;
+    }
+
+    @include desktop {
+      margin-top: 6px;
+      margin-bottom: 78px;
+    }
     .regular_price{
       font-size: 19px;
-      font-weight: 900;
       > .rp-rl{
         display:inline-block;
         background:url(./line.png);
@@ -68,14 +123,34 @@ article{
     }
   }
   &_qty{
-    font-size: 20px;
+    font-size: 21px;
     margin: 10px 0;
+
+    @include tablet {
+      display: inline-block;
+      width:135px;
+    }
+
+    @include desktop {
+      display: inline-block;
+    }
     > input{
       width: 80px;
       border-radius: 12px;
+      margin-left: 10px;
     }
   }
   &_btn{
+
+  @include tablet {
+    display: inline-block;
+    width:170px;
+  }
+
+  @include desktop {
+    display: inline-block;
+    margin-left: 10px;
+  }
     > button{
       font-size: 22px;
       color: #FFF;
