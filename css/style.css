@@ -1,0 +1,124 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     font-size: 100%;
+     font-family: 'Open Sans', sans-serif;
+     background-color: white; }
+
+a:link {
+     color: #FF0000; }
+
+a:visited {
+     color: #00FF00; }
+
+a:hover {
+     color: #FF00FF; }
+
+a:active {
+     color: #0000FF; }
+
+a:link {
+     text-decoration: none; }
+
+a:visited {
+     text-decoration: none; }
+
+a:hover {
+     text-decoration: none; }
+
+a:active {
+     text-decoration: none; }
+
+@font-face {
+     font-family: 'fontello';
+     src: url("../fontello/font/fontello.eot?39150304");
+     src: url("../fontello/font/fontello.eot?39150304#iefix") format("embedded-opentype"), url("../fontello/font/fontello.woff?39150304") format("woff"), url("../fontello/font/fontello.ttf?39150304") format("truetype"), url("../fontello/font/fontello.svg?39150304#fontello") format("svg");
+     font-weight: normal;
+     font-style: normal; }
+
+.demo-icon {
+     font-family: "fontello";
+     font-style: normal;
+     font-weight: normal;
+     speak: none;
+     display: inline-block;
+     text-decoration: inherit;
+     width: 1em;
+     margin-right: .2em;
+     text-align: center;
+     transform: scaleX(-1);
+     -moz-transform: scaleX(-1);
+     -webkit-transform: scaleX(-1);
+     -ms-transform: scaleX(-1);
+     /* opacity: .8; */
+     /* For safety - reset parent styles, that can break glyph codes*/
+     font-variant: normal;
+     text-transform: none;
+     /* fix buttons height, for twitter bootstrap */
+     line-height: 1em;
+     /* Animation center compensation - margins should be symmetric */
+     /* remove if not needed */
+     margin-left: .2em;
+     /* You can be more comfortable with increased icons size */
+     /* font-size: 120%; */
+     /* Font smoothing. That was taken from TWBS */
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     /* Uncomment for 3D effect */
+     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.left {
+     float: left; }
+
+.italic {
+     font-style: italic; }
+
+.small-font {
+     font-size: 0.875em; }
+
+.container {
+     width: 996px;
+     height: 112px;
+     border: 1px solid black;
+     padding-left: 0px;
+     padding-right: 0px; }
+
+.img-logo {
+     padding-top: 10px; }
+
+.cart-box {
+     width: 236px;
+     height: 112px;
+     float: right;
+     border: 1px solid black; }
+
+.cart-view {
+     width: 128px;
+     height: 24px;
+     margin: 0 auto;
+     background-color: #0B6796;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     border-radius: 10px;
+     padding: 0px 10px;
+     margin-top: 10px; }
+     .cart-view a {
+          color: white;
+          display: block; }
+
+i.white {
+     color: white;
+     margin-right: 10px; }
+
+.divider {
+     padding: 0px 3px; }
+
+.search {
+     width: 200px;
+     height: 26px;
+     margin: 0 auto;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     border-radius: 15px; }
