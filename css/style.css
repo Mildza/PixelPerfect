@@ -44,6 +44,53 @@ article {
   padding: 20px 15px;
   border: 2px solid #CDCDCD; }
 
+.product-image {
+  text-align: center; }
+
+.product-description {
+  text-align: center; }
+  .product-description_title {
+    line-height: 122%;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    margin-top: 10px; }
+  .product-description_description {
+    border-top: 1px dashed;
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 136%; }
+
+.product-order {
+  text-align: center; }
+  .product-order_price {
+    margin-top: 15px; }
+    .product-order_price .regular_price {
+      font-size: 19px;
+      font-weight: 900; }
+      .product-order_price .regular_price > .rp-rl {
+        display: inline-block;
+        background: url(./line.png);
+        background-size: 100% 100%; }
+    .product-order_price .new_price {
+      font-size: 32px;
+      font-weight: 900;
+      color: #DC5730; }
+  .product-order_qty {
+    font-size: 20px;
+    margin: 10px 0; }
+    .product-order_qty > input {
+      width: 80px;
+      border-radius: 12px; }
+  .product-order_btn > button {
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 900;
+    border-radius: 12px;
+    padding: 3px 25px;
+    background: url("./button.png") no-repeat;
+    border: 0; }
+
 @font-face {
   font-family: 'fontello';
   src: url("../fontello/font/fontello.eot?39150304");

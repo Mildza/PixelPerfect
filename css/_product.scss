@@ -25,3 +25,65 @@ article{
   padding: 20px 15px;
   border: 2px solid #CDCDCD;
 }
+
+.product-image{
+  text-align: center;
+}
+
+.product-description{
+  text-align: center;
+  &_title{
+    line-height: 122%;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+
+  &_description{
+    border-top: 1px dashed;
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 136%;
+  }
+}
+
+.product-order{
+  text-align: center;
+  &_price{
+    margin-top: 15px;
+    .regular_price{
+      font-size: 19px;
+      font-weight: 900;
+      > .rp-rl{
+        display:inline-block;
+        background:url(./line.png);
+        background-size:100% 100%;
+      }
+    }
+    .new_price{
+      font-size: 32px;
+      font-weight: 900;
+      color:#DC5730;
+    }
+  }
+  &_qty{
+    font-size: 20px;
+    margin: 10px 0;
+    > input{
+      width: 80px;
+      border-radius: 12px;
+    }
+  }
+  &_btn{
+    > button{
+      font-size: 22px;
+      color: #FFF;
+      font-weight: 900;
+      border-radius: 12px;
+      padding: 3px 25px;
+      background: url("./button.png") no-repeat;
+      border: 0;
+    }
+  }
+}
