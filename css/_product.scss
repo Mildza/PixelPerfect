@@ -1,0 +1,27 @@
+@import '_media/media';
+
+h2 {
+  font-size: 34px;
+  font-weight: 900;
+  color: #0B6796;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
+}
+
+section{
+  padding: 17px 6px;
+  background-color:#EAEAEA;
+  width: 100%;
+}
+
+article{
+  background-color:#FFF;
+  padding: 20px 15px;
+  border: 2px solid #CDCDCD;
+}
