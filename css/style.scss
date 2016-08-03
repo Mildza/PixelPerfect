@@ -1,6 +1,8 @@
 @import 'reset';
 @import 'variables';
 @import 'functions';
+@import 'product';
+@import 'expresscheckout';
 @mixin border-radius ($radius) {
   -webkit-border-radius: $radius;
    -moz-border-radius: $radius;
@@ -80,7 +82,7 @@ i.white {color:white;margin-right: 10px;}
 .divider {padding: 0px 3px;}
 
 .search {
-  
+
   width:200px;height:26px;
   margin: 0 auto;
   @include border-radius(15px);
