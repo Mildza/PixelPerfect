@@ -114,21 +114,47 @@
         <p>Order Summary</p>
         <div class="express-checkout">
           <div class="express-checkout_product">
-            <p>1 x Smart Living Flat Stacks Containers 4 x Rectangular Set</p>
-            <p>$59.95</p>
+            <div class="ec-product">1 x Smart Living Flat Stacks Containers 4 x Rectangular Set</div>
+            <div class="ec-price">$59.95</div>
           </div>
           <div class="express-checkout_product">
-            <p>1 x Smart Living Flameless Candles 3 x Rectangular Set + 1 x Free Regular Set</p>
-            <p>$99.00</p>
+            <div class="ec-product">1 x Smart Living Flameless Candles 3 x Rectangular Set + 1 x Free Regular Set</div>
+            <div class="ec-price">$99.00</div>
           </div>
-          <div class="express-checkout_total">
-            <p>Sub Total: $158.95</p>
-          </div>
+          <div class="express-checkout_total">Sub Total: $158.95</div>
         </div>
+        <p>Customer details</p>
+        <form>
+          <label for="first_name">First Name*</label><input type="text" id="first_name">
+          <label for="last_name">Last Name*</label><input type="text" id="last_name">
+          <label for="address1">Street Address</label><input type="text" id="address1">
+          <label for="address2">Street Address 2</label><input type="text" id="address2">
+          <label for="post">Post Code*</label><input type="text" id="post">
+          <label for="superb">Superb*</label><input type="number" id="superb" placeholder="Please enter postcode above.">
+          <label for="state">State</label><input type="text" id="state">
+          <label for="country">Country</label>
+          <select id="country">
+            <option value=""></option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="EU">EU</option>
+          </select>
+          <label for="email">Email*</label><input type="text" id="email">
+          <label for="phone">Phone*</label><input type="text" id="phone">
+          <div class="interesting">Product interted in:</div>
+          <div class="interesting-list">
+            <input type="checkbox"><label class="inline-label">Household</label><br />
+            <input type="checkbox"><label class="inline-label">Lifestyle</label><br />
+            <input type="checkbox"><label class="inline-label">Healt &amp; Beauty</label><br />
+            <input type="checkbox"><label class="inline-label">Audio</label><br />
+            <input type="checkbox"><label class="inline-label">Tech</label><br />
+            <input type="checkbox"><label class="inline-label">Kids</label><br />
+          </div>
+          <input type="checkbox" class="marketing"><label class="inline-label">I'm happy to receive marketing material.</label><br />
+          <button>Next &raquo;</button>
+          <div class="next-msg">Next step is to choose delivery method &amp; process payment.</div>
+        </form>
       </section>
-
-
-
-      <div class="footer"></div>
+    </div>
   </body>
 </html>

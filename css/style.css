@@ -139,8 +139,9 @@ article {
         display: inline-block; } }
     .product-order_qty > input {
       width: 80px;
-      border-radius: 12px;
-      margin-left: 10px; }
+      border-radius: 10px;
+      margin-left: 10px;
+      border: 1px solid #CDCDCD; }
   @media (min-width: 750px) and (max-width: 995px) {
     .product-order_btn {
       display: inline-block;
@@ -162,23 +163,137 @@ article {
   padding-top: 1px; }
   .expresscheckout > p {
     font-size: 18px;
-    font-weight: 900; }
+    font-weight: 900;
+    margin-top: 18px; }
+  .expresscheckout > form input, .expresscheckout > form select {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #CDCDCD;
+    padding: 4px 10px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form input, .expresscheckout > form select {
+        display: inline-block;
+        width: 52%;
+        margin: 5px 15% 0 12px; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form input, .expresscheckout > form select {
+        display: inline-block;
+        width: 52%;
+        margin: 5px 15% 0 12px; } }
+  .expresscheckout > form label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-weight: 400; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form label {
+        display: inline-block;
+        width: 200px;
+        text-align: right; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form label {
+        display: inline-block;
+        width: 200px;
+        text-align: right; } }
+  .expresscheckout > form .interesting {
+    margin-top: 15px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form .interesting {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+        vertical-align: top; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form .interesting {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+        vertical-align: top; } }
+  .expresscheckout > form .interesting-list {
+    margin-bottom: 15px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form .interesting-list {
+        display: inline-block;
+        width: 52%;
+        margin: 15px 15% 15px 12px;
+        vertical-align: top; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form .interesting-list {
+        display: inline-block;
+        width: 52%;
+        margin: 15px 15% 15px 12px;
+        vertical-align: top; } }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .expresscheckout > form .marketing {
+      margin-left: 10%;
+      display: inline-block; } }
+  @media (min-width: 996px) {
+    .expresscheckout > form .marketing {
+      margin-left: 10%;
+      display: inline-block; } }
+  .expresscheckout > form .inline-label {
+    display: inline;
+    vertical-align: middle;
+    margin-top: 0; }
+  .expresscheckout > form input[type=checkbox] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: 0;
+    vertical-align: middle; }
+  .expresscheckout > form button {
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 900;
+    border-radius: 12px;
+    padding: 3px 25px;
+    background: url("./button.png") no-repeat;
+    border: 0;
+    margin-top: 17px;
+    width: 164px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form button {
+        margin-left: 225px; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form button {
+        margin-left: 225px; } }
+  .expresscheckout > form .next-msg {
+    display: none; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form .next-msg {
+        display: block;
+        margin: 35px 0; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form .next-msg {
+        display: block;
+        margin: 35px 0; } }
 
 .express-checkout {
   background-color: #FFF;
   padding: 20px 15px;
   border: 2px solid #CDCDCD;
-  margin-bottom: 15px; }
-  .express-checkout p {
-    margin: 0; }
-  @media (min-width: 750px) and (max-width: 995px) {
-    .express-checkout {
-      padding: 10px 15px; } }
-  @media (min-width: 996px) {
-    .express-checkout {
-      padding: 10px 15px; } }
+  margin-bottom: 24px;
+  line-height: 120%; }
   .express-checkout_product {
-    padding-bottom: 3px; }
+    padding-bottom: 10px; }
+    @media (min-width: 996px) {
+      .express-checkout_product .ec-product {
+        float: left;
+        line-height: 150%;
+        width: 80%; } }
+    @media (min-width: 996px) {
+      .express-checkout_product .ec-price {
+        float: right;
+        line-height: 150%; } }
+  @media (min-width: 996px) {
+    .express-checkout_total {
+      clear: both;
+      text-align: right;
+      width: 100%;
+      margin-bottom: 0;
+      line-height: 150%; } }
 
 @font-face {
   font-family: 'fontello';
