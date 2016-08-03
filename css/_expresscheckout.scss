@@ -1,0 +1,32 @@
+.expresscheckout{
+  padding-top: 1px;
+  > p{
+    font-size: 18px;
+    font-weight: 900;
+  }
+}
+
+.express-checkout{
+  background-color:#FFF;
+  padding: 20px 15px;
+  border: 2px solid #CDCDCD;
+  margin-bottom: 15px;
+
+  p{
+    margin:0;
+    line-height: 120%;
+  }
+
+  @include tablet {
+  padding: 10px 15px;
+  }
+
+  @include desktop {
+  padding: 10px 15px;
+  }
+
+  &_product{
+    padding-bottom: 10px;
+  }
+
+}

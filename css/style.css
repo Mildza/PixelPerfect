@@ -35,14 +35,15 @@ h2 {
   color: #0B6796; }
 
 section {
-  padding: 17px 6px;
+  padding: 17px 6px 0 6px;
   background-color: #EAEAEA;
   width: 100%; }
 
 article {
   background-color: #FFF;
   padding: 20px 15px;
-  border: 2px solid #CDCDCD; }
+  border: 2px solid #CDCDCD;
+  margin-bottom: 15px; }
   @media (min-width: 750px) and (max-width: 995px) {
     article {
       padding: 10px 15px; } }
@@ -156,6 +157,28 @@ article {
     padding: 3px 25px;
     background: url("./button.png") no-repeat;
     border: 0; }
+
+.expresscheckout {
+  padding-top: 1px; }
+  .expresscheckout > p {
+    font-size: 18px;
+    font-weight: 900; }
+
+.express-checkout {
+  background-color: #FFF;
+  padding: 20px 15px;
+  border: 2px solid #CDCDCD;
+  margin-bottom: 15px; }
+  .express-checkout p {
+    margin: 0; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .express-checkout {
+      padding: 10px 15px; } }
+  @media (min-width: 996px) {
+    .express-checkout {
+      padding: 10px 15px; } }
+  .express-checkout_product {
+    padding-bottom: 3px; }
 
 @font-face {
   font-family: 'fontello';

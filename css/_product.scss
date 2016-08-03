@@ -7,7 +7,7 @@ h2 {
 }
 
 section{
-  padding: 17px 6px;
+  padding: 17px 6px 0 6px;
   background-color:#EAEAEA;
   width: 100%;
 }
@@ -16,6 +16,7 @@ article{
   background-color:#FFF;
   padding: 20px 15px;
   border: 2px solid #CDCDCD;
+  margin-bottom: 15px;
 
   @include tablet {
   padding: 10px 15px;
