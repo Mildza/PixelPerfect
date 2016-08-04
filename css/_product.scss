@@ -8,8 +8,15 @@ h2 {
 
 section{
   padding: 17px 6px 0 6px;
-  background-color:#EAEAEA;
   width: 100%;
+
+  @include tablet {
+  padding: 17px 16px 0 16px;
+  }
+
+  @include desktop {
+  padding: 17px 16px 0 16px;
+  }
 }
 
 article{

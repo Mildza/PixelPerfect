@@ -3,6 +3,7 @@
 @import 'functions';
 @import 'product';
 @import 'expresscheckout';
+@import 'order';
 @mixin border-radius ($radius) {
   -webkit-border-radius: $radius;
    -moz-border-radius: $radius;
@@ -52,8 +53,14 @@
         /* Uncomment for 3D effect */
         /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
       }
-
-
+body{
+background-color:#EAEAEA;
+box-sizing: border-box;
+}
+.container-wrapper{
+  max-width: 996px;
+  margin:auto;
+}
 .left {float:left;}
 .center {margin:0 auto;}
 .italic {font-style: italic;}
@@ -112,6 +119,7 @@ i.white {color:white;margin-right: 10px;}
   margin: 0 auto;
   margin-top: 10px;
 &-input{
+  width:200px;
   color:$siva;
   margin-top:10px;
   @include border-radius(15px);
