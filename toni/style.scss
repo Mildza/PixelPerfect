@@ -55,46 +55,20 @@
 
 
 .left {float:left;}
-.center {margin:0 auto;}
 .italic {font-style: italic;}
 .small-font {font-size: px2em(14);}
 .container {
   //background-color: #EAEAEA;
   width:996px;
   height:112px;
+  border:1px solid black;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.header {height:200px; background-color: white;
+.img-logo {padding-top: 10px;}
 
-  @include tablet {
-    height:120px;
-  }
-  @include desktop {
-    height:120px;
-  }
-
-}
-.logo {text-align: center;
-  @include tablet {
-    float:left;
-  }
-  @include desktop {
-    float:left;
-  }
-}
-.img-logo {padding-top: 10px; padding-bottom: 10px;}
-
-.cart-box {
-  width:236px; height:112px;
-  @include tablet {
-    float:right;
-  }
-  @include desktop {
-    float:right;
-  }
-}
+.cart-box {width:236px; height:112px; float:right; border:1px solid black;}
 .cart-view {
   width:128px; height:24px;
   margin: 0 auto;
@@ -108,18 +82,17 @@ i.white {color:white;margin-right: 10px;}
 .divider {padding: 0px 3px;}
 
 .search {
+
   width:200px;height:26px;
   margin: 0 auto;
-  margin-top: 10px;
-&-input{
-  color:$siva;
-  margin-top:10px;
   @include border-radius(15px);
-  border:1px solid $siva;;
-  padding-left: 30px;
+
 }
-}
-.move {position: relative; top:-22px; left:8px;color:$siva;}
+
+
+
+
+
 
 @media(max-width:991px){
 
@@ -127,26 +100,5 @@ i.white {color:white;margin-right: 10px;}
 }
 
 @media(max-width:304px){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
