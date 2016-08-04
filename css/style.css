@@ -354,6 +354,7 @@ article {
     vertical-align: top;
     margin-left: 8%;
     text-align: left; } }
+
 @media (min-width: 996px) {
   .product-order-description {
     display: inline-block;
@@ -368,6 +369,7 @@ article {
     display: inline-block;
     width: 24%;
     text-align: left; } }
+
 @media (min-width: 996px) {
   .product-order-regular_price {
     display: inline-block;
@@ -379,10 +381,12 @@ article {
   .ordered-product {
     display: block;
     width: 100%; } }
+
 @media (min-width: 996px) {
   .ordered-product {
     display: inline-block;
     width: 39%; } }
+
 .ordered-product .product-order_qty {
   font-size: 21px;
   margin: 10px 0;
@@ -451,6 +455,7 @@ article {
   src: url("../fontello/font/fontello.eot?39150304#iefix") format("embedded-opentype"), url("../fontello/font/fontello.woff?39150304") format("woff"), url("../fontello/font/fontello.ttf?39150304") format("truetype"), url("../fontello/font/fontello.svg?39150304#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .demo-icon {
   font-family: "fontello";
   font-style: normal;
@@ -483,15 +488,18 @@ article {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
 body {
-  background-color: #EAEAEA;
   box-sizing: border-box; }
 
 .container-wrapper {
   max-width: 996px;
-  margin: auto; }
+  margin: auto;
+  background-color: #EAEAEA; }
 
 .left {
   float: left; }
+
+.right {
+  float: right; }
 
 .center {
   margin: 0 auto; }
@@ -585,4 +593,29 @@ i.white {
   left: 8px;
   color: #D6D6D6; }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  width: 100%;
+  background-color: #EAEAEA; }
+  @media (min-width: 996px) {
+    footer {
+      height: 100px; } }
+  footer .copyright {
+    font-size: 0.875em;
+    margin-top: 5px;
+    text-align: center;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    border: 1px solid black; }
+    @media (min-width: 996px) {
+      footer .copyright {
+        width: 70%;
+        padding: 0;
+        float: left; } }
+  footer .logo-bottom {
+    text-align: center;
+    border: 1px solid black; }
+    @media (min-width: 996px) {
+      footer .logo-bottom {
+        width: 30%;
+        float: right;
+        text-align: right; } }
