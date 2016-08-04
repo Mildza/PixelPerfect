@@ -1,428 +1,588 @@
 html, body {
-     margin: 0;
-     padding: 0;
-     font-size: 100%;
-     font-family: 'Open Sans', sans-serif;
-     background-color: white; }
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white; }
 
 a:link {
-     color: #FF0000; }
+  color: #FF0000; }
 
 a:visited {
-     color: #00FF00; }
+  color: #00FF00; }
 
 a:hover {
-     color: #FF00FF; }
+  color: #FF00FF; }
 
 a:active {
-     color: #0000FF; }
+  color: #0000FF; }
 
 a:link {
-     text-decoration: none; }
+  text-decoration: none; }
 
 a:visited {
-     text-decoration: none; }
+  text-decoration: none; }
 
 a:hover {
-     text-decoration: none; }
+  text-decoration: none; }
 
 a:active {
-     text-decoration: none; }
+  text-decoration: none; }
 
 h2 {
-     font-size: 34px;
-     font-weight: 900;
-     color: #0B6796; }
+  font-size: 34px;
+  font-weight: 900;
+  color: #0B6796; }
 
 section {
-     padding: 17px 6px 0 6px;
-     background-color: #EAEAEA;
-     width: 100%; }
+  padding: 17px 6px 0 6px;
+  width: 100%; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    section {
+      padding: 17px 16px 0 16px; } }
+  @media (min-width: 996px) {
+    section {
+      padding: 17px 16px 0 16px; } }
 
 article {
-     background-color: #FFF;
-     padding: 20px 15px;
-     border: 2px solid #CDCDCD;
-     margin-bottom: 15px; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          article {
-               padding: 10px 15px; } }
-     @media (min-width: 996px) {
-          article {
-               padding: 10px 15px; } }
+  background-color: #FFF;
+  padding: 20px 15px;
+  border: 2px solid #CDCDCD;
+  margin-bottom: 15px; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    article {
+      padding: 10px 15px; } }
+  @media (min-width: 996px) {
+    article {
+      padding: 10px 15px; } }
 
 .product-image {
-     margin: auto;
-     width: 200px; }
-     .product-image > img {
-          width: 100%; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .product-image {
-               display: inline-block;
-               width: 20%;
-               vertical-align: top; } }
-     @media (min-width: 996px) {
-          .product-image {
-               display: inline-block;
-               width: 21%;
-               vertical-align: top; } }
+  margin: auto;
+  width: 200px; }
+  .product-image > img {
+    width: 100%; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-image {
+      display: inline-block;
+      width: 20%;
+      vertical-align: top; } }
+  @media (min-width: 996px) {
+    .product-image {
+      display: inline-block;
+      width: 21%;
+      vertical-align: top; } }
 
 .product-description {
-     text-align: center; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .product-description {
-               display: inline-block;
-               width: 78%;
-               text-align: left;
-               margin-left: 1%; } }
-     @media (min-width: 996px) {
-          .product-description {
-               display: inline-block;
-               width: 43%;
-               text-align: left;
-               max-width: 415px;
-               margin-left: 1%; } }
-     .product-description_title {
-          line-height: 122%;
-          font-size: 19px;
-          font-weight: 900;
-          margin-bottom: 12px;
-          margin-top: 10px; }
-     .product-description_description {
-          border-top: 1px dashed;
-          font-size: 14px;
-          padding: 10px 0;
-          line-height: 136%; }
+  text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-description {
+      display: inline-block;
+      width: 78%;
+      text-align: left;
+      margin-left: 1%; } }
+  @media (min-width: 996px) {
+    .product-description {
+      display: inline-block;
+      width: 43%;
+      text-align: left;
+      max-width: 415px;
+      margin-left: 1%; } }
+  .product-description_title {
+    line-height: 122%;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    margin-top: 10px; }
+  .product-description_description {
+    border-top: 1px dashed;
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 136%; }
 
 .product-order {
-     text-align: center; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .product-order {
-               margin-left: 21.5%;
-               width: 78%;
-               text-align: left; } }
-     @media (min-width: 996px) {
-          .product-order {
-               display: inline-block;
-               width: 34%;
-               text-align: right;
-               vertical-align: top; } }
-     .product-order_price {
-          margin-top: 15px; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .product-order_price {
-                    display: inline-block;
-                    width: 32%; } }
-          @media (min-width: 996px) {
-               .product-order_price {
-                    margin-top: 6px;
-                    margin-bottom: 78px; } }
-          .product-order_price .regular_price {
-               font-size: 19px; }
-               .product-order_price .regular_price > .rp-rl {
-                    display: inline-block;
-                    background: url(./line.png);
-                    background-size: 100% 100%; }
-          .product-order_price .new_price {
-               font-size: 32px;
-               font-weight: 900;
-               color: #DC5730; }
-     .product-order_qty {
-          font-size: 21px;
-          margin: 10px 0; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .product-order_qty {
-                    display: inline-block;
-                    width: 135px; } }
-          @media (min-width: 996px) {
-               .product-order_qty {
-                    display: inline-block; } }
-          .product-order_qty > input {
-               width: 80px;
-               border-radius: 10px;
-               margin-left: 10px;
-               border: 1px solid #CDCDCD; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .product-order_btn {
-               display: inline-block;
-               width: 170px; } }
-     @media (min-width: 996px) {
-          .product-order_btn {
-               display: inline-block;
-               margin-left: 10px; } }
-     .product-order_btn > button {
-          font-size: 22px;
-          color: #FFF;
-          font-weight: 900;
-          border-radius: 12px;
-          padding: 3px 25px;
-          background: url("./button.png") no-repeat;
-          border: 0; }
+  text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-order {
+      margin-left: 21.5%;
+      width: 78%;
+      text-align: left; } }
+  @media (min-width: 996px) {
+    .product-order {
+      display: inline-block;
+      width: 34%;
+      text-align: right;
+      vertical-align: top; } }
+  .product-order_price {
+    margin-top: 15px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .product-order_price {
+        display: inline-block;
+        width: 32%; } }
+    @media (min-width: 996px) {
+      .product-order_price {
+        margin-top: 6px;
+        margin-bottom: 78px; } }
+    .product-order_price .regular_price {
+      font-size: 19px; }
+      .product-order_price .regular_price > .rp-rl {
+        display: inline-block;
+        background: url(./line.png);
+        background-size: 100% 100%; }
+    .product-order_price .new_price {
+      font-size: 32px;
+      font-weight: 900;
+      color: #DC5730; }
+  .product-order_qty {
+    font-size: 21px;
+    margin: 10px 0; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .product-order_qty {
+        display: inline-block;
+        width: 135px; } }
+    @media (min-width: 996px) {
+      .product-order_qty {
+        display: inline-block; } }
+    .product-order_qty > input {
+      width: 80px;
+      border-radius: 10px;
+      margin-left: 10px;
+      border: 1px solid #CDCDCD; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-order_btn {
+      display: inline-block;
+      width: 170px; } }
+  @media (min-width: 996px) {
+    .product-order_btn {
+      display: inline-block;
+      margin-left: 10px; } }
+  .product-order_btn > button {
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 900;
+    border-radius: 12px;
+    padding: 3px 25px;
+    background: url("./button.png") no-repeat;
+    border: 0; }
 
 .expresscheckout {
-     padding-top: 1px; }
-     .expresscheckout > p {
-          font-size: 18px;
-          font-weight: 900;
-          margin-top: 18px; }
-     .expresscheckout > form input, .expresscheckout > form select {
-          display: block;
-          width: 100%;
-          border-radius: 12px;
-          border: 1px solid #CDCDCD;
-          padding: 4px 10px; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .expresscheckout > form input, .expresscheckout > form select {
-                    display: inline-block;
-                    width: 52%;
-                    margin: 5px 15% 0 12px; } }
-          @media (min-width: 996px) {
-               .expresscheckout > form input, .expresscheckout > form select {
-                    display: inline-block;
-                    width: 52%;
-                    margin: 5px 15% 0 12px; } }
-     .expresscheckout > form label {
-          display: block;
-          margin-top: 2px;
-          margin-bottom: 0px;
-          font-weight: 400; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .expresscheckout > form label {
-                    display: inline-block;
-                    width: 200px;
-                    text-align: right; } }
-          @media (min-width: 996px) {
-               .expresscheckout > form label {
-                    display: inline-block;
-                    width: 200px;
-                    text-align: right; } }
-     .expresscheckout > form .interesting {
-          margin-top: 15px; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .expresscheckout > form .interesting {
-                    display: inline-block;
-                    width: 200px;
-                    text-align: right;
-                    vertical-align: top; } }
-          @media (min-width: 996px) {
-               .expresscheckout > form .interesting {
-                    display: inline-block;
-                    width: 200px;
-                    text-align: right;
-                    vertical-align: top; } }
-     .expresscheckout > form .interesting-list {
-          margin-bottom: 15px; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .expresscheckout > form .interesting-list {
-                    display: inline-block;
-                    width: 52%;
-                    margin: 15px 15% 15px 12px;
-                    vertical-align: top; } }
-          @media (min-width: 996px) {
-               .expresscheckout > form .interesting-list {
-                    display: inline-block;
-                    width: 52%;
-                    margin: 15px 15% 15px 12px;
-                    vertical-align: top; } }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .expresscheckout > form .marketing {
-               margin-left: 10%;
-               display: inline-block; } }
-     @media (min-width: 996px) {
-          .expresscheckout > form .marketing {
-               margin-left: 10%;
-               display: inline-block; } }
-     .expresscheckout > form .inline-label {
-          display: inline;
-          vertical-align: middle;
-          margin-top: 0; }
-     .expresscheckout > form input[type=checkbox] {
-          display: inline-block;
-          width: 16px;
-          height: 16px;
-          margin-right: 10px;
-          margin-top: 0;
-          vertical-align: middle; }
-     .expresscheckout > form button {
-          font-size: 22px;
-          color: #FFF;
-          font-weight: 900;
-          border-radius: 12px;
-          padding: 3px 25px;
-          background: url("./button.png") no-repeat;
-          border: 0;
-          margin-top: 17px;
-          width: 164px; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .expresscheckout > form button {
-                    margin-left: 225px; } }
-          @media (min-width: 996px) {
-               .expresscheckout > form button {
-                    margin-left: 225px; } }
-     .expresscheckout > form .next-msg {
-          display: none; }
-          @media (min-width: 750px) and (max-width: 995px) {
-               .expresscheckout > form .next-msg {
-                    display: block;
-                    margin: 35px 0; } }
-          @media (min-width: 996px) {
-               .expresscheckout > form .next-msg {
-                    display: block;
-                    margin: 35px 0; } }
+  padding-top: 1px; }
+  .expresscheckout > p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 18px; }
+  .expresscheckout > form input, .expresscheckout > form select {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #CDCDCD;
+    padding: 4px 10px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form input, .expresscheckout > form select {
+        display: inline-block;
+        width: 52%;
+        margin: 5px 15% 0 12px; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form input, .expresscheckout > form select {
+        display: inline-block;
+        width: 52%;
+        margin: 5px 15% 0 12px; } }
+  .expresscheckout > form label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-weight: 400; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form label {
+        display: inline-block;
+        width: 200px;
+        text-align: right; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form label {
+        display: inline-block;
+        width: 200px;
+        text-align: right; } }
+  .expresscheckout > form .interesting {
+    margin-top: 15px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form .interesting {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+        vertical-align: top; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form .interesting {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+        vertical-align: top; } }
+  .expresscheckout > form .interesting-list {
+    margin-bottom: 15px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form .interesting-list {
+        display: inline-block;
+        width: 52%;
+        margin: 15px 15% 15px 12px;
+        vertical-align: top; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form .interesting-list {
+        display: inline-block;
+        width: 52%;
+        margin: 15px 15% 15px 12px;
+        vertical-align: top; } }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .expresscheckout > form .marketing {
+      margin-left: 10%;
+      display: inline-block; } }
+  @media (min-width: 996px) {
+    .expresscheckout > form .marketing {
+      margin-left: 10%;
+      display: inline-block; } }
+  .expresscheckout > form .inline-label {
+    display: inline;
+    vertical-align: middle;
+    margin-top: 0; }
+  .expresscheckout > form input[type=checkbox] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: 0;
+    vertical-align: middle; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .expresscheckout > form select {
+      margin-left: 8px; } }
+  @media (min-width: 996px) {
+    .expresscheckout > form select {
+      margin-left: 8px; } }
+  .expresscheckout > form button {
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 900;
+    border-radius: 12px;
+    padding: 3px 25px;
+    background: url("./button.png") no-repeat;
+    border: 0;
+    margin-top: 17px;
+    width: 164px; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form button {
+        margin-left: 225px; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form button {
+        margin-left: 225px; } }
+  .expresscheckout > form .next-msg {
+    display: none; }
+    @media (min-width: 750px) and (max-width: 995px) {
+      .expresscheckout > form .next-msg {
+        display: block;
+        margin: 35px 0 0 0; } }
+    @media (min-width: 996px) {
+      .expresscheckout > form .next-msg {
+        display: block;
+        margin: 35px 0 0 0; } }
 
 .express-checkout {
-     background-color: #FFF;
-     padding: 20px 15px;
-     border: 2px solid #CDCDCD;
-     margin-bottom: 24px;
-     line-height: 120%; }
-     .express-checkout_product {
-          padding-bottom: 10px; }
-          @media (min-width: 996px) {
-               .express-checkout_product .ec-product {
-                    float: left;
-                    line-height: 150%;
-                    width: 80%; } }
-          @media (min-width: 996px) {
-               .express-checkout_product .ec-price {
-                    float: right;
-                    line-height: 150%; } }
-     @media (min-width: 996px) {
-          .express-checkout_total {
-               clear: both;
-               text-align: right;
-               width: 100%;
-               margin-bottom: 0;
-               line-height: 150%; } }
+  background-color: #FFF;
+  padding: 20px 15px;
+  border: 2px solid #CDCDCD;
+  margin-bottom: 24px;
+  line-height: 120%; }
+  .express-checkout_product {
+    padding-bottom: 10px; }
+    @media (min-width: 996px) {
+      .express-checkout_product .ec-product {
+        float: left;
+        line-height: 150%;
+        width: 80%; } }
+    @media (min-width: 996px) {
+      .express-checkout_product .ec-price {
+        float: right;
+        line-height: 150%; } }
+  @media (min-width: 996px) {
+    .express-checkout_total {
+      clear: both;
+      text-align: right;
+      width: 100%;
+      margin-bottom: 0;
+      line-height: 150%; } }
+
+.order-qty > a {
+  display: block; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .order-qty > a {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: top; } }
+  @media (min-width: 996px) {
+    .order-qty > a {
+      display: inline-block;
+      margin-left: 30px;
+      vertical-align: top; } }
+
+.product-small-image {
+  margin: auto;
+  width: 110px; }
+  .product-small-image > img {
+    width: 100%; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-small-image {
+      display: inline-block;
+      width: 16%;
+      vertical-align: top; } }
+  @media (min-width: 996px) {
+    .product-small-image {
+      display: inline-block;
+      width: 16%;
+      vertical-align: top; } }
+
+.order-qty {
+  margin: 23px 0; }
+
+.product-order-description,
+.product-order-regular_price {
+  line-height: 122%;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  text-align: center; }
+
+@media (min-width: 750px) and (max-width: 995px) {
+  .product-order-description {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin-left: 8%;
+    text-align: left; } }
+@media (min-width: 996px) {
+  .product-order-description {
+    display: inline-block;
+    width: 36%;
+    vertical-align: top;
+    margin-left: 8%;
+    text-align: left;
+    padding-right: 5%; } }
+
+@media (min-width: 750px) and (max-width: 995px) {
+  .product-order-regular_price {
+    display: inline-block;
+    width: 24%;
+    text-align: left; } }
+@media (min-width: 996px) {
+  .product-order-regular_price {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    vertical-align: top; } }
+
+@media (min-width: 750px) and (max-width: 995px) {
+  .ordered-product {
+    display: block;
+    width: 100%; } }
+@media (min-width: 996px) {
+  .ordered-product {
+    display: inline-block;
+    width: 39%; } }
+.ordered-product .product-order_qty {
+  font-size: 21px;
+  margin: 10px 0;
+  text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .ordered-product .product-order_qty {
+      display: inline-block;
+      width: 32%; } }
+  @media (min-width: 996px) {
+    .ordered-product .product-order_qty {
+      display: inline-block;
+      width: 32%;
+      text-align: center;
+      vertical-align: top; } }
+  .ordered-product .product-order_qty > span {
+    margin-left: 5px;
+    font-size: 16px; }
+  .ordered-product .product-order_qty > input {
+    width: 70px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid #CDCDCD;
+    text-align: center; }
+
+.product-order-total-price {
+  font-size: 22px;
+  font-weight: 900;
+  color: #DC5730;
+  text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .product-order-total-price {
+      display: inline-block;
+      width: 32%; } }
+  @media (min-width: 996px) {
+    .product-order-total-price {
+      display: inline-block;
+      width: 32%;
+      text-align: center;
+      vertical-align: top; } }
+
+.desktop-hide {
+  display: inline; }
+  @media (min-width: 996px) {
+    .desktop-hide {
+      display: none; } }
+
+.order-header {
+  display: none; }
+  @media (min-width: 996px) {
+    .order-header {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px; } }
+  .order-header > div {
+    display: inline-block; }
+  .order-header-product {
+    width: 60%;
+    text-align: left; }
+  .order-header-unitprice, .order-header-quantity, .order-header-price {
+    text-align: center;
+    width: 12%; }
 
 @font-face {
-     font-family: 'fontello';
-     src: url("../fontello/font/fontello.eot?39150304");
-     src: url("../fontello/font/fontello.eot?39150304#iefix") format("embedded-opentype"), url("../fontello/font/fontello.woff?39150304") format("woff"), url("../fontello/font/fontello.ttf?39150304") format("truetype"), url("../fontello/font/fontello.svg?39150304#fontello") format("svg");
-     font-weight: normal;
-     font-style: normal; }
-
+  font-family: 'fontello';
+  src: url("../fontello/font/fontello.eot?39150304");
+  src: url("../fontello/font/fontello.eot?39150304#iefix") format("embedded-opentype"), url("../fontello/font/fontello.woff?39150304") format("woff"), url("../fontello/font/fontello.ttf?39150304") format("truetype"), url("../fontello/font/fontello.svg?39150304#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .demo-icon {
-     font-family: "fontello";
-     font-style: normal;
-     font-weight: normal;
-     speak: none;
-     display: inline-block;
-     text-decoration: inherit;
-     width: 1em;
-     margin-right: .2em;
-     text-align: center;
-     transform: scaleX(-1);
-     -moz-transform: scaleX(-1);
-     -webkit-transform: scaleX(-1);
-     -ms-transform: scaleX(-1);
-     /* opacity: .8; */
-     /* For safety - reset parent styles, that can break glyph codes*/
-     font-variant: normal;
-     text-transform: none;
-     /* fix buttons height, for twitter bootstrap */
-     line-height: 1em;
-     /* Animation center compensation - margins should be symmetric */
-     /* remove if not needed */
-     margin-left: .2em;
-     /* You can be more comfortable with increased icons size */
-     /* font-size: 120%; */
-     /* Font smoothing. That was taken from TWBS */
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     /* Uncomment for 3D effect */
-     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+body {
+  background-color: #EAEAEA;
+  box-sizing: border-box; }
+
+.container-wrapper {
+  max-width: 996px;
+  margin: auto; }
 
 .left {
-     float: left; }
+  float: left; }
 
 .center {
-     margin: 0 auto; }
+  margin: 0 auto; }
 
 .italic {
-     font-style: italic; }
+  font-style: italic; }
 
 .small-font {
-     font-size: 0.875em; }
+  font-size: 0.875em; }
 
 .container {
-     width: 996px;
-     height: 112px;
-     padding-left: 0px;
-     padding-right: 0px; }
+  width: 996px;
+  height: 112px;
+  padding-left: 0px;
+  padding-right: 0px; }
 
 .header {
-     height: 200px;
-     background-color: white; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .header {
-               height: 120px; } }
-     @media (min-width: 996px) {
-          .header {
-               height: 120px; } }
+  height: 200px;
+  background-color: white; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .header {
+      height: 120px; } }
+  @media (min-width: 996px) {
+    .header {
+      height: 120px; } }
 
 .logo {
-     text-align: center; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .logo {
-               float: left; } }
-     @media (min-width: 996px) {
-          .logo {
-               float: left; } }
+  text-align: center; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .logo {
+      float: left; } }
+  @media (min-width: 996px) {
+    .logo {
+      float: left; } }
 
 .img-logo {
-     padding-top: 10px;
-     padding-bottom: 10px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .cart-box {
-     width: 236px;
-     height: 112px; }
-     @media (min-width: 750px) and (max-width: 995px) {
-          .cart-box {
-               float: right; } }
-     @media (min-width: 996px) {
-          .cart-box {
-               float: right; } }
+  width: 236px;
+  height: 112px; }
+  @media (min-width: 750px) and (max-width: 995px) {
+    .cart-box {
+      float: right; } }
+  @media (min-width: 996px) {
+    .cart-box {
+      float: right; } }
 
 .cart-view {
-     width: 128px;
-     height: 24px;
-     margin: 0 auto;
-     background-color: #0B6796;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     border-radius: 10px;
-     padding: 0px 10px;
-     margin-top: 10px; }
-     .cart-view a {
-          color: white;
-          display: block; }
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+  background-color: #0B6796;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  margin-top: 10px; }
+  .cart-view a {
+    color: white;
+    display: block; }
 
 i.white {
-     color: white;
-     margin-right: 10px; }
+  color: white;
+  margin-right: 10px; }
 
 .divider {
-     padding: 0px 3px; }
+  padding: 0px 3px; }
 
 .search {
-     width: 200px;
-     height: 26px;
-     margin: 0 auto;
-     margin-top: 10px; }
-     .search-input {
-          color: #D6D6D6;
-          margin-top: 10px;
-          -webkit-border-radius: 15px;
-          -moz-border-radius: 15px;
-          -ms-border-radius: 15px;
-          border-radius: 15px;
-          border: 1px solid #D6D6D6;
-          padding-left: 30px; }
+  width: 200px;
+  height: 26px;
+  margin: 0 auto;
+  margin-top: 10px; }
+  .search-input {
+    width: 200px;
+    color: #D6D6D6;
+    margin-top: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #D6D6D6;
+    padding-left: 30px; }
 
 .move {
-     position: relative;
-     top: -22px;
-     left: 8px;
-     color: #D6D6D6; }
+  position: relative;
+  top: -22px;
+  left: 8px;
+  color: #D6D6D6; }
+
+/*# sourceMappingURL=style.css.map */
