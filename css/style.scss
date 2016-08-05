@@ -1,5 +1,6 @@
-@import 'reset';
 @import 'variables';
+@import 'reset';
+
 @import 'functions';
 @import 'product';
 @import 'expresscheckout';
@@ -116,7 +117,7 @@ margin-top: 10px;
 }
 i.white {color:white;margin-right: 10px;}
 .divider {padding: 0px 3px;}
-
+.display-none {display:none;}
 .search {
   width:200px;height:26px;
   margin: 0 auto;
