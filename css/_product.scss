@@ -120,9 +120,25 @@ article{
       font-size: 19px;
       > .rp-rl{
         display:inline-block;
-        background:url(./line.png);
+        //background:url(./line.png);
         background-size:100% 100%;
       }
+      .cross {
+    position: relative;
+    display: inline-block;
+}
+.cross::before, .cross::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.cross::before {
+    border-bottom: 2px solid red;
+    -webkit-transform: skewY(-16deg);
+    transform: skewY(-16deg);
+}
     }
     .new_price{
       font-size: 32px;
