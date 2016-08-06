@@ -374,6 +374,32 @@ a:active {
     text-align: center;
     width: 12%; }
 
+.total-order {
+  text-align: right;
+  padding: 9px; }
+  .total-order > p {
+    font-size: 20px;
+    padding-right: 9px;
+    margin-bottom: 0; }
+  .total-order p.total-price {
+    font-size: 22px;
+    font-weight: 900;
+    color: #DC5730; }
+
+.next-btn {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 65px; }
+
+.next-description {
+  font-size: 14px;
+  margin: 17px 0 0 auto;
+  max-width: 365px; }
+
+@media (min-width: 996px) {
+  .update-order {
+    margin-left: 60%; } }
+
 @font-face {
   font-family: 'fontello';
   src: url("../fontello/font/fontello.eot?39150304");
@@ -384,7 +410,6 @@ a:active {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -424,6 +449,9 @@ body {
 
 .right {
   float: right; }
+
+.clear-float {
+  clear: both; }
 
 .center {
   margin: 0 auto; }
@@ -620,11 +648,12 @@ article {
       padding: 10px 15px; } }
 
 button {
-  font-size: 22px;
+  width: 162px;
+  font-size: 20px;
   color: #FFF;
   font-weight: 900;
   border-radius: 12px;
-  padding: 3px 25px;
+  padding: 3px;
   background: url("./button.png") no-repeat;
   border: 0; }
 

@@ -26,7 +26,6 @@
   { font-family: "fontello";
     font-style: normal;
     font-weight: normal;
-    speak: none;
 
     display: inline-block;
     text-decoration: inherit;
@@ -66,6 +65,9 @@ body{box-sizing: border-box;}
 
 .left {float:left;}
 .right {float:right;}
+.clear-float{
+  clear: both;
+}
 .center {margin:0 auto;}
 .italic {font-style: italic;}
 .small-font {font-size: px2em(14);}
@@ -200,10 +202,11 @@ article{
 }
 
 button{
-  font-size: 22px;
+  width:162px;
+  font-size: 20px;
   color: #FFF;
   font-weight: 900;
   border-radius: 12px;
-  padding: 3px 25px;
+  padding: 3px;
   background: url("./button.png") no-repeat;
   border: 0;}
