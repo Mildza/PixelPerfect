@@ -2,12 +2,15 @@
 
 .expresscheckout{
   padding-top: 1px;
+
   > p{
     font-size: 18px;
     font-weight: 900;
     margin-top: 18px;
   }
+
   > form{
+
     input, select{
       display: block;
       width:100%;
@@ -20,13 +23,8 @@
         width: 52%;
         margin: 5px 15% 0 12px;
       }
-
-      @include desktop {
-        display: inline-block;
-        width: 52%;
-        margin: 5px 15% 0 12px;
-      }
     }
+
     label{
       display: block;
       margin-top: 2px;
@@ -38,13 +36,8 @@
         width: 200px;
         text-align: right;
       }
-
-      @include desktop {
-        display: inline-block;
-        width: 200px;
-        text-align: right;
-      }
     }
+
     .interesting{
       margin-top: 15px;
 
@@ -54,14 +47,8 @@
         text-align: right;
         vertical-align: top;
       }
-
-      @include desktop {
-        display: inline-block;
-        width: 200px;
-        text-align: right;
-        vertical-align: top;
-      }
     }
+
     .interesting-list{
       margin-bottom: 15px;
 
@@ -71,31 +58,22 @@
         margin: 15px 15% 15px 12px;
         vertical-align: top;
       }
-
-      @include desktop {
-        display: inline-block;
-        width: 52%;
-        margin: 15px 15% 15px 12px;
-        vertical-align: top;
-      }
     }
+
     .marketing{
 
       @include tablet {
         margin-left: 10%;
         display: inline-block;
       }
-
-      @include desktop {
-        margin-left: 10%;
-        display: inline-block;
-      }
     }
+
     .inline-label{
       display: inline;
       vertical-align: middle;
       margin-top: 0;
     }
+
     input[type=checkbox]{
         display: inline-block;
         width: 16px;
@@ -107,40 +85,22 @@
 
     select{
       @include tablet {margin-left: 8px;}
-      @include desktop {margin-left: 8px;}
     }
 
     button{
-      font-size: 22px;
-      color: #FFF;
-      font-weight: 900;
-      border-radius: 12px;
-      padding: 3px 25px;
-      background: url("./button.png") no-repeat;
-      border: 0;
       margin-top: 17px;
       width: 164px;
 
-        @include tablet {
-          margin-left: 225px;
-        }
-
-        @include desktop {
-          margin-left: 225px;
-        }
+      @include tablet {margin-left: 225px;}
     }
+
     .next-msg{
-      display: none;;
+      display: none;
 
-        @include tablet {
-          display: block;
-          margin: 35px 0 0 0;
-        }
-
-        @include desktop {
-          display: block;
-          margin: 35px 0 0 0;
-        }
+      @include tablet {
+        display: block;
+        margin: 35px 0 0 0;
+      }
     }
   }
 }
@@ -176,11 +136,9 @@
     @include desktop {
       clear: both;
       text-align: right;
-	    width: 100%;
+	  width: 100%;
       margin-bottom: 0;
       line-height: 150%;
     }
-
   }
-
 }
