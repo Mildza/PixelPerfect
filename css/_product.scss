@@ -1,40 +1,5 @@
 @import '_media/media';
 
-h2 {
-  font-size: 34px;
-  font-weight: 900;
-  color: #0B6796;
-}
-
-section{
-  padding: 17px 6px 0 6px;
-  width: 100%;
-
-  @include tablet {
-  padding: 17px 16px 0 16px;
-  }
-
-  @include desktop {
-  padding: 17px 16px 0 16px;
-  }
-}
-
-article{
-  background-color:#FFF;
-  padding: 20px 15px;
-  border: 2px solid #CDCDCD;
-  margin-bottom: 15px;
-
-  @include tablet {
-  padding: 10px 15px;
-  }
-
-  @include desktop {
-  padding: 10px 15px;
-  }
-
-}
-
 .product-image{
   margin:auto;;
   width: 200px;
@@ -48,11 +13,7 @@ article{
     vertical-align: top;
   }
 
-  @include desktop {
-    display: inline-block;
-    width: 21%;
-    vertical-align: top;
-  }
+  @include desktop {width: 21%;}
 }
 
 .product-description{
@@ -66,11 +27,8 @@ article{
   }
 
   @include desktop {
-    display: inline-block;
     width:43%;
-    text-align: left;
     max-width: 415px;
-    margin-left: 1%;
   }
 
   &_title{
@@ -99,11 +57,13 @@ article{
   }
 
   @include desktop {
+    margin-left: 0;
     display: inline-block;
     width:34%;
-    text-align: right;;
+    text-align: right;
     vertical-align: top;
   }
+
   &_price{
     margin-top: 15px;
 
@@ -113,32 +73,29 @@ article{
     }
 
     @include desktop {
+      display: block;
+      width: auto;
       margin-top: 6px;
       margin-bottom: 78px;
     }
     .regular_price{
       font-size: 19px;
-      > .rp-rl{
-        display:inline-block;
-        //background:url(./line.png);
-        background-size:100% 100%;
-      }
       .cross {
-    position: relative;
-    display: inline-block;
-}
-.cross::before, .cross::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-.cross::before {
-    border-bottom: 2px solid red;
-    -webkit-transform: skewY(-16deg);
-    transform: skewY(-16deg);
-}
+        position: relative;
+        display: inline-block;
+      }
+      .cross::before, .cross::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+      .cross::before {
+          border-bottom: 2px solid red;
+          -webkit-transform: skewY(-16deg);
+          transform: skewY(-16deg);
+      }
     }
     .new_price{
       font-size: 32px;
@@ -155,9 +112,8 @@ article{
       width:135px;
     }
 
-    @include desktop {
-      display: inline-block;
-    }
+    @include desktop {width:auto;}
+
     > input{
       width: 80px;
       border-radius: 10px;
@@ -173,17 +129,8 @@ article{
   }
 
   @include desktop {
-    display: inline-block;
+    width:auto;
     margin-left: 10px;
   }
-    > button{
-      font-size: 22px;
-      color: #FFF;
-      font-weight: 900;
-      border-radius: 12px;
-      padding: 3px 25px;
-      background: url("./button.png") no-repeat;
-      border: 0;
-    }
   }
 }
