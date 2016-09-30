@@ -55,8 +55,11 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
   }
 
-body{box-sizing: border-box;}
-
+body{
+    box-sizing: border-box;
+     @include desktop {background-color: #EAEAEA;}
+}
+.full {width:100%;background-color: #FFF;}
 .container-wrapper{
   max-width: 996px;
   margin:auto;
@@ -140,7 +143,7 @@ footer {
     margin-bottom: 10px;
     @include desktop {
       width:75%;
-      padding:0;
+      padding-top:10px;
       float:left;
       text-align: right;}
 
@@ -152,6 +155,7 @@ footer {
     @include desktop {
       width:23%;
       float:right;
+      padding-right: 10px;
       text-align: right;}
   }
 
@@ -161,12 +165,12 @@ footer {
 }
 
 .blank {width: 100%; height:10px;background-color: white;}
-
+.line { @include desktop {border-top: 1px solid $siva;width: 100%;}}
 .drop-nav {
   background-color: white;
   width: 100%; height: 43px;
   border-top: 1px solid $siva;
-
+  @include desktop {border-top: none;}
   li ul li {border-top: 1px; width:170px;}
 }
 
@@ -191,6 +195,7 @@ section{
   padding: 17px 6px 0 6px;
   width: 100%;
   @include tablet {padding: 17px 16px 0 16px;}
+  @include desktop {padding: 17px 16px 0 0px;}
 }
 
 article{
